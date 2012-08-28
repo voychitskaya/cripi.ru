@@ -1,0 +1,44 @@
+/*.b-layout *::before {
+    content: attr(class);
+    font-size: 8px;
+    color: #777;
+}*/
+
+.b-layout {
+    margin: 20px auto 0 auto;
+    width: 960px;
+    font-family: arial;
+
+    color: #333;
+
+    line-height: 130%;
+}
+
+.b-layout_type_bottom {
+    width: 100%;
+    padding: 20px 0;
+    
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+}
+
+.b-layout__head,
+.b-layout__foot,
+.b-layout__body {
+    margin-bottom: 20px;
+}
+
+.b-layout__foot {
+    margin: 20px auto;
+    width: 960px;
+}
+
+.b-layout__separator {
+  height: 1px;
+  margin: 50px 0;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  border: 0;
+}

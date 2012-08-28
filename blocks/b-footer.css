@@ -1,0 +1,27 @@
+.b-footer {
+    font-size: 12px;
+    color: #777;
+    clear: both;
+}
+
+.b-footer a {
+    color: #1A3DC1;
+}
+
+.b-footer a:hover {
+    color: red;
+}
+
+.b-footer__legal,
+.b-footer__logos {
+    width: 50%;
+    float: left;
+}
+
+.b-footer__fix {
+    clear: both;
+}
+
+.b-footer__logos {
+    text-align: right;
+}

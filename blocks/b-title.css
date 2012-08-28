@@ -1,0 +1,11 @@
+.b-title {
+    font-size: 3em;
+    color: #333;
+    text-align: center;
+
+    margin: 70px 0;
+}
+
+.b-title__title {
+    margin-bottom: 30px;
+}

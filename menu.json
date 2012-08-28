@@ -1,0 +1,25 @@
+{
+    "pages": [{
+        "id": "index",
+        "href": "/",
+        "title": "О Школе"
+    },{
+        "id": "faq",
+        "href": "/faq.html",
+        "title": "FAQ"
+    }],
+
+    "courses": [{
+        "id": "interface-design",
+        "href": "/interface-design.html",
+        "title": "Проектирование интерфейсов"
+    },{
+        "id": "interface-development",
+        "href": "/interface-development.html",
+        "title": "Разработка интерфейсов"
+    },{
+        "id": "javascript",
+        "href": "/javascript.html",
+        "title": "JavaScript"
+    }]
+}

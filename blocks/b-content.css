@@ -1,0 +1,51 @@
+.b-content {
+    margin-bottom: 70px;
+    font-size: 14px;
+}
+
+.b-content__side-menu {
+    width: 30%;
+    float: left;
+}
+
+.b-content__text {
+    width: 70%;
+    float: left;
+}
+
+.b-content__fix {
+    clear: both;
+}
+
+.b-content__text p {
+    line-height: 1.4em;
+    margin: 0 0 0.8em;
+}
+
+.b-content__text h3 {
+    font-size: 125%;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin: 1.9em 0 1em;
+}
+
+.b-content__text h4 {
+    font-size: 100%;
+    font-weight: 700;
+    margin-top: 1.5em;
+}
+
+.b-content__text a {
+    color: #1A3DC1;
+}
+
+.b-content__text a:hover {
+    color: red;
+}
+
+.b-content__text pre {
+    font-family: Consolas, Courier New, monospace;
+    padding: 10px 5px;
+    
+    background-color: #EFEFEF;
+}
