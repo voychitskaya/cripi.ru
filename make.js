@@ -1,4 +1,5 @@
-var TEXTS_DIR = "./texts/";
+var TEXTS_DIR = "./texts/",
+    WWW_DIR = "./www/";
 
 var menu = require('./menu.json'),
     fs = require('fs');
@@ -44,7 +45,7 @@ function renderPage(menu, id) {
         .replace('{{side_menu}}', side_menu)
         .replace('{{head_menu}}', head_menu);
 
-    fs.writeFileSync('./' + id + '.html', html, 'utf8');
+    fs.writeFileSync(WWW_DIR + id + '.html', html, 'utf8');
 }
 
 for (var i = 0, c = menu.pages.length, page; i < c; i++) {
