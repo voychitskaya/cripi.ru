@@ -2,11 +2,11 @@
     "pages": [{
         "id": "index",
         "href": "/",
-        "title": "О Школе"
+        "title": "О проекте"
     },{
         "id": "faq",
         "href": "/faq.html",
-        "title": "FAQ"
+        "title": "ЧаВо"
     }],
 
     "courses": [{
