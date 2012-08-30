@@ -1,5 +1,6 @@
 var TEXTS_DIR = "./texts/",
-    WWW_DIR = "./www/";
+    WWW_DIR = "./www/",
+    CSS_FILE = "./www/pages/index.css";
 
 var menu = require('./menu.json'),
     fs = require('fs');
@@ -60,6 +61,18 @@ for (i = 0, c = menu.courses.length; i < c; i++) {
     renderPage(menu, page.id);
 }
 
+var cssRealPath = fs.realpathSync(CSS_FILE),
+    cssBuild = fs.readFileSync(cssRealPath, 'utf8'),
+    cssRoot = cssRealPath.replace(/\/[^\/]+$/, '/'),
+    cssOutput = cssRealPath.replace(/\/([^\/]+)$/, '/_$1');
+
+console.log('Generating ' + cssOutput);
+
+var cssContent = cssBuild.replace(/@import url\(['"]([^'"]+)['"]\);/g, function (string, cssFile) {
+    return fs.readFileSync(cssRoot + cssFile, 'utf8') + '\n';
+});
+
+fs.writeFileSync(cssOutput, cssContent, 'utf8');
 
 console.log('Done');
 

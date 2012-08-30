@@ -4,6 +4,10 @@
     color: #777;
 }*/
 
+html, body {
+    height: 100%;
+}
+
 .b-layout {
     margin: 20px auto 0 auto;
     width: 960px;
@@ -20,6 +24,15 @@
     
     background-color: #eee;
     border-top: 1px solid #ccc;
+}
+
+.b-layout_type_top {
+    min-height: 100%;
+    position: relative;
+}
+
+* html .b-layout_type_top{
+  height: 100%;
 }
 
 .b-layout__head,
